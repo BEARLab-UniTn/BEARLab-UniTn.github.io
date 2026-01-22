@@ -7,22 +7,71 @@ nav: true
 nav_order: 7
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
+  # PROFESSOR
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+    image: Giorgini.jpg
+    content: about_Giorgini.md
+    image_circular: false
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>224 office number</p>
+      <p>Department of Information Engineering and Computer Science</p>
+      <p>University of Trento</p>
+
+  # --- SEPARATOR ---
   - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+    image: ""
+    content: ""
+    image_circular: false
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <hr style="border:0.5px solid #ccc; margin: 40px 0;">
+
+  # Researchers
+  ## Selene Tomassini
+  - align: left
+    image: Selene.jpg
+    content: about_Selene.md
+    image_circular: false
+    more_info: >
+      <p>210 office number</p>
+      <p>Department of Information Engineering and Computer Science</p>
+      <p>University of Trento</p>
+
+  ## Marco Robol
+  - align: left
+    image: MarcoR.jpg
+    content: about_MarcoR.md
+    image_circular: false
+    more_info: >
+      <p>210 office number</p>
+      <p>Department of Information Engineering and Computer Science</p>
+      <p>University of Trento</p>
+
+  ## Marco Bombieri
+  - align: right
+    image: MarcoB.jpg
+    content: about_MarcoB.md
+    image_circular: false
+    more_info: >
+      <p>210 office number</p>
+      <p>Department of Information Engineering and Computer Science</p>
+      <p>University of Trento</p>
+
+  # --- SEPARATOR ---
+  - align: left
+    image: ""
+    content: ""
+    image_circular: false
+    more_info: >
+      <hr style="border:0.5px solid #ccc; margin: 40px 0;">
+
+  # PHD students
+  ## Letizia Girardi
+  - align: left
+    image: Letizia.jpg
+    content: about_Letizia.md
+    image_circular: false
+    more_info: >
+      <p>246 office number</p>
+      <p>Department of Information Engineering and Computer Science</p>
+      <p>University of Trento</p>
 ---
