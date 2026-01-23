@@ -35,7 +35,7 @@ profiles:
 
 
   - name: Marco Bombieri
-    align: right
+    align: left
     image: MarcoB.jpg
     content: about_MarcoB.md
     image_circular: false
@@ -44,7 +44,7 @@ profiles:
 
   # PHD students
   - name: Letizia Girardi
-    align: left
+    align: right
     image: Letizia.jpg
     content: about_Letizia.md
     image_circular: false
