@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Course materials, schedules, and resources for classes taught.",
+        },{id: "nav-events",
+          title: "Events",
+          description: "A comprehensive overview of upcoming and past events, complete with schedules, materials, and resources. Browse by year, term, or topic to find what interests you.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/teaching/";
+            window.location.href = "/events/";
           },
         },{id: "nav-the-team",
           title: "The Team",
