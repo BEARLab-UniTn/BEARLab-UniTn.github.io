@@ -1,80 +1,100 @@
 
 <style>
-.medicinai-hero {
-  width: 100%;
-  text-align: center;
-  margin: 2rem 0;
+/* LOGO + TITOLI ORIZZONTALI */
+.medicinai-header {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 2.5rem 0;
 }
 
-.medicinai-hero img {
-  max-width: 100%;
+.medicinai-header img {
+  width: 180px; /* puoi aumentare a 220px */
   height: auto;
-  filter: drop-shadow(0 0 10px rgba(0,0,0,0.25));
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.18));
 }
 
-  .events-header {
-    margin-bottom: 2.5rem;
-  }
+.medicinai-header .header-text h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
 
-  .events-intro {
-    font-size: 1.15rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-  }
+.medicinai-header .header-text h2 {
+  margin-top: .3rem;
+  font-size: 1.35rem;
+  opacity: .8;
+}
 
-  .event-card {
-    background: #fafafa;
-    border-radius: 12px;
-    padding: 1.8rem 2rem;
-    margin-bottom: 2.8rem;
-    border: 1px solid #ececec;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-  }
+/* CARDS PER I SEMINARI */
+.event-card {
+  background: #f3f3f3;          /* grigino più aesthetic */
+  border-radius: 14px;
+  padding: 2.2rem 2.3rem;
+  margin-bottom: 3rem;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+}
 
-  .event-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: .4rem;
-  }
+/* Miglioramenti tipografici */
+.event-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: .4rem;
+}
 
-  .event-subtitle {
-    font-size: 1.25rem;
-    font-weight: 500;
-    opacity: .85;
-    margin-bottom: 1rem;
-  }
+.event-subtitle,
+.event-quote {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #444;
+  opacity: .9;
+  margin-bottom: .9rem;
+}
 
-  .event-quote {
-    font-style: italic;
-    color: #444;
-    margin-bottom: 1.2rem;
-    font-size: 1.05rem;
-  }
+.event-details {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
 
-  .event-details {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
+.event-section-title {
+  margin-top: 1.5rem;
+  margin-bottom: .4rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+}
 
-  .event-section-title {
-    margin-top: 1.2rem;
-    margin-bottom: .3rem;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #333;
-  }
+.event-text,
+.event-bio {
+  line-height: 1.68;
+  font-size: 1.02rem;
+  color: #333;
+}
 
-  .event-bio, .event-text {
-    line-height: 1.65;
-    margin-bottom: 1rem;
-  }
+/* Divider elegante */
+hr.soft {
+  border: none;
+  border-top: 1px solid #d6d6d6;
+  margin: 3rem 0;
+  opacity: .6;
+}
 
-  hr.soft {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 3rem 0;
-  }
 </style>
+
+
+<div class="medicinai-header">
+  <a href="https://sites.google.com/unitn.it/medicinai/cycle-of-seminars" target="_blank">
+    <img src="{{ '/assets/img/medicinai-logo.png' | relative_url }}" alt="MedicinAI Logo">
+  </a>
+
+  <div class="header-text">
+    <h1>One-day Workshop</h1>
+    <h2>AI and Decision Support in Healthcare: From Data to Clinical Impact</h2>
+  </div>
+</div>
 
 
 <div class="event">
@@ -91,24 +111,9 @@
   <p><strong>When?</strong> December 4, 2025</p>
   <p><strong>Where?</strong> Room A108, Polo Ferrari 1, University of Trento</p>
 
-  <h3>Program at a glance</h3>
-  <ul>
-    <li>08:30 — Registration</li>
-    <li>08:45–09:00 — Welcome & Introduction</li>
-    <li>09:00–10:00 — Keynote (Prof. Henning Müller)</li>
-    <li>10:00–10:20 — Coffee break</li>
-    <li>10:20–13:00 — Oral sessions</li>
-    <li>13:00–14:00 — Buffet lunch</li>
-    <li>14:00–15:00 — Keynote (Prof. Katja Bühler)</li>
-    <li>15:00–17:40 — Oral sessions</li>
-    <li>17:40 — Closing & Aperitif</li>
-  </ul>
-
   <h3>Oral sessions</h3>
   <p>Oral sessions in the morning</p>
   <p>Oral sessions in the afternoon</p>
-
-  <p><strong>Participation is free, but registration is required!</strong></p>
 
   <!-- ---------------- KEYNOTE 1 ---------------- -->
   <hr>
@@ -160,12 +165,6 @@
     This seminar series opens the MedicinAI event.<br>
     All seminars will be held in Italian and will be followed by a roundtable discussion, 
     a Q&A session, and a buffet aperitivo.<br><br>
-
-    <strong>Participation is free upon registration</strong> (see the bottom of this page).  
-    For more information: <a href="https://eventi.unitn.it/it/medicinai" target="_blank">eventi.unitn.it/it/medicinai</a>
-  </p>
-
-  <p class="events-intro"><em>From here on, the content of this page will be in Italian!</em></p>
 </div>
 
 <!-- SEMINARIO I -->
