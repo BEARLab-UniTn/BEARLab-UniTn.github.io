@@ -203,3 +203,182 @@ hr.soft {
 <hr class="soft">
 </div>
 </div>
+<style>
+/* ---------------- HEADER ---------------- */
+.medicinai-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #f3f3f3;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.medicinai-header img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.18));
+}
+
+.medicinai-header h1 {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.medicinai-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  opacity: .8;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------- SEMINARI ---------------- */
+.seminar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 3rem 1rem;
+}
+
+.seminar-card {
+  display: flex;
+  gap: 2rem;
+  background: #f3f3f3;
+  border-radius: 14px;
+  padding: 2rem;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+  flex-wrap: wrap;
+}
+
+/* Colonna sinistra: info principali */
+.seminar-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.seminar-left .seminar-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.seminar-left .seminar-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: .8;
+  margin-bottom: 0.5rem;
+}
+
+.seminar-left .seminar-quote {
+  font-style: italic;
+  color: #444;
+  opacity: .9;
+  margin-bottom: 0.5rem;
+}
+
+.seminar-left .seminar-date,
+.seminar-left .seminar-location {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Colonna destra: relatore e bio */
+.seminar-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.seminar-right .speaker-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.seminar-right .speaker-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.seminar-right .speaker-affiliation {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.seminar-right .speaker-bio {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #333;
+}
+</style>
+
+<!-- ---------------- HEADER ---------------- -->
+<div class="medicinai-header">
+  <img src="{{ '/assets/img/medicinai-logo.png' | relative_url }}" alt="MedicinAI Logo">
+  <h1>MedicinAI Event</h1>
+  <h2>Cycle of Seminars and One-day Workshop on AI in Healthcare</h2>
+</div>
+
+<!-- ---------------- SEMINARI ---------------- -->
+<div class="seminar-section">
+
+  <!-- SEMINARIO I -->
+  <div class="seminar-card">
+    <div class="seminar-left">
+      <div class="seminar-title">Seminario I — Dal dato alla conoscenza</div>
+      <div class="seminar-subtitle">"IA e dati clinici: dalla frammentazione alla visione unitaria"</div>
+      <div class="seminar-date"><strong>17 Ottobre 2025</strong></div>
+      <div class="seminar-location">16:30 — Aula A110, Polo Ferrari 1</div>
+    </div>
+    <div class="seminar-right">
+      <div class="speaker-title">Relatore</div>
+      <div class="speaker-name">Prof. Paolo Soda</div>
+      <div class="speaker-affiliation">Professore Ordinario di Sistemi di Elaborazione delle Informazioni — Università Campus Bio-Medico di Roma</div>
+      <div class="speaker-bio">
+        Paolo Soda si è laureato con lode in Ingegneria Biomedica presso l'Università Campus Bio-Medico (UCBM) di Roma nel 2004 e ha conseguito il dottorato di ricerca in Ingegneria Biomedica nel 2008 presso la stessa Università. Attualmente è Professore Ordinario presso l'UCBM e Visiting Professor in Artificial Intelligence and Biomedical Engineering presso Umeå University, Svezia. Esperto in apprendimento multimodale, modelli generativi, IA spiegabile e resilienza algoritmi IA. Ha coordinato gruppi vincitori di competizioni internazionali e vanta oltre 190 pubblicazioni scientifiche.
+      </div>
+    </div>
+  </div>
+
+  <!-- SEMINARIO II -->
+  <div class="seminar-card">
+    <div class="seminar-left">
+      <div class="seminar-title">Seminario II — Supporto decisionale</div>
+      <div class="seminar-subtitle">"L’IA al fianco del medico: diagnosi, terapia e percorsi personalizzati"</div>
+      <div class="seminar-date"><strong>6 Novembre 2025</strong></div>
+      <div class="seminar-location">16:30 — Aula A108, Polo Ferrari 1</div>
+    </div>
+    <div class="seminar-right">
+      <div class="speaker-title">Relatore</div>
+      <div class="speaker-name">Prof. Riccardo Bellazzi</div>
+      <div class="speaker-affiliation">Professore Ordinario di Bioingegneria Elettronica e Informatica — Università di Pavia</div>
+      <div class="speaker-bio">
+        Riccardo Bellazzi coordina il dottorato in Bioingegneria, Bioinformatica e Tecnologie per la Salute all’Università di Pavia. È co-direttore del Laboratorio di Informatica Biomedica "Mario Stefanelli" e dirige il Laboratorio di Informatica Medica e IA presso IRCCS ICS Maugeri. La sua ricerca riguarda IA, machine learning in biomedicina, telemedicina e sistemi di supporto alle decisioni. Ha oltre 450 pubblicazioni con h-index 53 e numerosi riconoscimenti internazionali.
+      </div>
+    </div>
+  </div>
+
+  <!-- SEMINARIO III -->
+  <div class="seminar-card">
+    <div class="seminar-left">
+      <div class="seminar-title">Seminario III — Etica e sicurezza</div>
+      <div class="seminar-subtitle">"Affidabilità e trasparenza: come regolamentare l’uso dell’IA in sanità"</div>
+      <div class="seminar-date"><strong>25 Novembre 2025</strong></div>
+      <div class="seminar-location">16:30 — Aula A110, Polo Ferrari 1</div>
+    </div>
+    <div class="seminar-right">
+      <div class="speaker-title">Relatore</div>
+      <div class="speaker-name">Prof. Carlo Bottari</div>
+      <div class="speaker-affiliation">Università di Bologna</div>
+      <div class="speaker-bio">
+        Il seminario analizzerà il quadro normativo italiano ed europeo e i principi etici e giuridici per un uso sicuro e consapevole dell’IA clinica.
+      </div>
+    </div>
+  </div>
+
+</div>
