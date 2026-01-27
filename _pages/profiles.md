@@ -54,6 +54,7 @@ profiles:
     content: about_Letizia.md
     image_circular: false
     more_info: >
+      <h3>Letizia Girardi</h3>
       <p>PhD student</p>
 
 ---
