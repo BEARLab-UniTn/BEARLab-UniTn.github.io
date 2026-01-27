@@ -1,12 +1,14 @@
 <style>
 .medicinai-container {
-  background: #f9f9f9;       /* leggero sfondo grigio */
-  padding: 2rem 3rem;        /* spazio interno */
-  border-radius: 16px;        /* angoli arrotondati */
-  border: 1px solid #e2e2e2; /* bordo sottile */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* ombra delicata */
-  margin-bottom: 3rem;        /* distanza dal resto della pagina */
+  background: #f9f9f9;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 3rem;
 }
+
+
 
 /* ---------------- HEADER ---------------- */
 .medicinai-header {
@@ -36,6 +38,14 @@
   font-size: 1.35rem;
   opacity: .8;
 }
+
+.workshop-header p {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
 
 /* ---------------- EVENT CARDS ---------------- */
 .event-card {
@@ -145,24 +155,28 @@ hr.soft {
 }
 </style>
 
+
 <!-- ---------------- CONTENITORE PRINCIPALE MEDICINAI ---------------- -->
 <div class="medicinai-container">
 
-  <!-- HEADER -->
+  <!-- ---------------- HEADER LOGO + TITLE ---------------- -->
   <div class="medicinai-header">
     <a href="https://sites.google.com/unitn.it/medicinai/home-page" target="_blank">
       <img src="{{ '/assets/img/medicinai-logo.png' | relative_url }}" alt="MedicinAI Logo">
     </a>
     <div class="header-text">
       <h1>MedicinAI Event</h1>
-      <h2>Un viaggio unico sulle tendenze attuali e future dell’IA in medicina, tra seminari d’avanguardia e workshop internazionali.</h2>
     </div>
   </div>
 
-  <!-- ---------------- WORKSHOP ---------------- -->
+  <!-- ---------------- WORKSHOP + DESCRIZIONE ---------------- -->
   <div class="workshops-section">
-    <div class="workshop-header">Workshop</div>
+    <div class="workshop-header">
+      Workshop
+      <p>MedicinAI event is a unique journey into current and future trends of AI in medicine, combining a cycle of cutting-edge seminars with a final international workshop.</p>
+    </div>
 
+    <!-- WORKSHOP CARD -->
     <div class="workshop-card">
       <div class="event-content">
         <div class="event-title">One-day Workshop: AI and Decision Support in Healthcare: From Data to Clinical Impact</div>
@@ -173,10 +187,8 @@ hr.soft {
         <p class="event-text">Il workshop fornirà panoramica completa su applicazioni cliniche dell’IA, dall’integrazione dei dati multimodali fino a strategie robuste e explainable AI per decisioni affidabili.</p>
       </div>
     </div>
-  </div>
 
-  <!-- ---------------- SEMINARI ---------------- -->
-  <div class="seminars-section">
+    <!-- SEMINARI -->
     <div class="events-header">Cycle of Seminars — MedicinAI</div>
 
     <!-- SEMINARIO I -->
@@ -217,7 +229,8 @@ hr.soft {
         <p class="event-text">Il seminario analizzerà il quadro normativo italiano ed europeo e i principi etici e giuridici per un uso sicuro e consapevole dell’IA clinica.</p>
       </div>
     </div>
-  </div>
 
-</div>
+  </div> <!-- end workshops-section -->
+
+</div> <!-- end medicinai-container -->
 <hr class="soft">
